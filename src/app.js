@@ -1,4 +1,7 @@
 // Instantiate Github and UI class
+import "../src/github.css"
+import Github from './github.js'
+import UI from './ui'
 const github = new Github;
 const ui = new UI;
 
@@ -11,7 +14,7 @@ searchUser.addEventListener('keyup', (e) => {
     const userText = e.target.value;
 
     if(userText !== '') {
-        // Make the http call with a promise. Remember with word 'async' the getUser() function returns a Promise.
+   
         github.getUser(userText)
           .then(data => {
             if(data.profile.message === "Not Found") {

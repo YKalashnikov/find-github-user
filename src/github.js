@@ -1,4 +1,4 @@
-class Github {
+export default class Github {
   constructor() {
     this.client_id = '80095ab70783897d06fc';
     this.client_secret = '9f3780f63c656718b8b0a9a72e09a4bf143ca9f6';
